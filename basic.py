@@ -24,9 +24,7 @@ def savings(gross_pay, tax_rate, expenses):
     -------
     int
         the number of centavos remaining from an employee's pay after taxes and expenses
-    '''
-    # Replace `pass` with your code.
-    # Stay within the function. Only use the parameters as input. The function should return your answer.    
+    '''  
     after_tax = math.floor((1 - tax_rate) * gross_pay)
     take_home_pay = after_tax - expenses
     
@@ -54,8 +52,6 @@ def material_waste(total_material, material_units, num_jobs, job_consumption):
     str
         the amount of remaining material expressed with its unit (e.g., "10kg").
     '''
-    # Replace `pass` with your code.
-    # Stay within the function. Only use the parameters as input. The function should return your answer.
 
     job_waste = total_material - (num_jobs * job_consumption)
     return str(job_waste) + material_units
@@ -80,8 +76,6 @@ def interest(principal, rate, periods):
     int
         the final value of the investment
     '''
-    # Replace `pass` with your code.
-    # Stay within the function. Only use the parameters as input. The function should return your answer.
 
     simple_interest = math.floor((principal * rate * periods) + principal)
     
